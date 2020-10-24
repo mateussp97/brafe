@@ -54,6 +54,23 @@ body {
   font-size: 1.125em;
 }
 
+@media (max-width: 739px) {
+  .menu {
+    text-align: center;
+  }
+
+  .menu-logo {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .menu-nav {
+    float: none;
+    clear: both;
+    margin-top: 20px;
+  }
+}
+
 /*Introduction*/
 .intro {
   background: url("../img/bg-intro.jpg") no-repeat center center;
@@ -80,6 +97,12 @@ body {
 .intro p {
   font-size: 1.125em;
   font-style: italic;
+}
+
+@media (max-width: 739px) {
+  .intro {
+    padding: 60px 0;
+  }
 }
 
 /*About*/
@@ -143,6 +166,27 @@ body {
   max-width: 460px;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+  .about-container {
+    max-width: 720px;
+  }
+
+  .about-item {
+    width: 340px;
+  }
+}
+
+@media (max-width: 739px) {
+  .about-container {
+    max-width: 300px;
+  }
+
+  .about-item {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
 /*Products*/
 .products {
   padding: 30px 0;
@@ -164,8 +208,9 @@ body {
 }
 
 .products-item {
-  width: 320px;
+  width: 290px;
   float: left;
+  margin: 0 10px;
 }
 
 .products-item h2 {
@@ -217,6 +262,30 @@ h2.products-mineiro::before {
   text-align: center;
   padding: 15px 0;
   margin: 30px auto 0 auto;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .products-container {
+    max-width: 720px;
+  }
+
+  .products-item {
+    width: 220px;
+  }
+}
+
+@media (max-width: 739px) {
+  .products-container {
+    max-width: 290px;
+  }
+
+  .products-item {
+    margin: 0 auto 30px auto;
+  }
+
+  .products-btn {
+    margin: 0 auto;
+  }
 }
 
 /*Locations*/
@@ -271,6 +340,49 @@ h2.products-mineiro::before {
   border: 3px solid #252525;
   color: #252525;
   padding: 10px 20px;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .locations {
+    max-width: 720px;
+  }
+
+  .locations-item > div,
+  .locations-item img {
+    width: 340px;
+  }
+
+  .locations-item h2 {
+    margin-bottom: 10px;
+  }
+
+  .locations-item p {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 739px) {
+  .locations {
+    max-width: 300px;
+  }
+
+  .locations-item {
+    margin: 40px 0;
+  }
+
+  .locations-item > div,
+  .locations-item img {
+    width: 300px;
+    margin: 0;
+  }
+
+  .locations-item h2 {
+    margin-bottom: 10px;
+  }
+
+  .locations-item p {
+    margin-bottom: 30px;
+  }
 }
 
 /*Newsletter*/
@@ -344,6 +456,44 @@ h2.products-mineiro::before {
   cursor: pointer;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+  .newsletter-container {
+    width: 720px;
+  }
+
+  .newsletter-info,
+  .newsletter form,
+  .newsletter input {
+    width: 340px;
+  }
+
+  .newsletter button {
+    margin-left: 0px;
+    margin-top: -2px;
+  }
+}
+
+@media (max-width: 739px) {
+  .newsletter-container {
+    max-width: 300px;
+  }
+
+  .newsletter-info,
+  .newsletter form,
+  .newsletter input {
+    width: 300px;
+  }
+
+  .newsletter-info {
+    margin-bottom: 20px;
+  }
+
+  .newsletter button {
+    margin-left: 0px;
+    margin-top: -2px;
+  }
+}
+
 /*Footer*/
 .footer {
   background: #d6d3c8;
@@ -372,4 +522,20 @@ h2.products-mineiro::before {
 
 .footer img {
   float: right;
+}
+
+@media (max-width: 789px) {
+  .footer-container {
+    max-width: 360px;
+  }
+
+  .footer p {
+    float: none;
+    margin: 0;
+  }
+
+  .footer img {
+    float: none;
+    margin-top: 20px;
+  }
 }
