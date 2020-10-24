@@ -1,0 +1,375 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  color: #252525;
+}
+
+/*Menu*/
+.menu {
+  background: #252525;
+  padding: 20px 0;
+}
+
+.menu-container {
+  /*Centering menu*/
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.menu-container::after,
+.menu-container::before {
+  /*Cleaning up the float bug*/
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu-logo {
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+
+.menu-nav {
+  float: right;
+  margin-right: 10px;
+}
+
+.menu-nav li {
+  display: inline-block;
+}
+
+.menu-nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125em;
+}
+
+/*Introduction*/
+.intro {
+  background: url("../img/bg-intro.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 150px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.intro h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.intro h1::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #fff;
+  margin: 10px auto;
+}
+
+.intro p {
+  font-size: 1.125em;
+  font-style: italic;
+}
+
+/*About*/
+.about {
+  padding: 60px 0;
+}
+
+.about-container {
+  /*Centering menu*/
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-container::after,
+.about-container::before {
+  /*Cleaning up the float bug*/
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.25em;
+  margin-bottom: 60px;
+}
+
+.about-item {
+  width: 460px;
+  float: left;
+  margin: 0 10px;
+}
+
+.about-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.about-item h3 {
+  font-size: 2.25em;
+  line-height: 1em;
+  background-color: #252525;
+  width: 220px;
+  color: #fff;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  z-index: 1;
+  position: relative;
+  top: -25px;
+}
+
+.about p {
+  font-size: 1.125em;
+  line-height: 1.4em;
+  font-style: italic;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 460px;
+}
+
+/*Products*/
+.products {
+  padding: 30px 0;
+  background: #e7e4d8;
+  border-top: 3px solid #d6d3c8;
+  border-bottom: 3px solid #d6d3c8;
+}
+
+.products-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.products-container::after,
+.products-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.products-item {
+  width: 320px;
+  float: left;
+}
+
+.products-item h2 {
+  text-align: center;
+  font-size: 2.25em;
+  margin: 0 10px 20px 10px;
+}
+
+.products-item h2::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: currentColor;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 5px solid #e7e4d8;
+  box-shadow: 0 0 0 10px currentColor;
+}
+
+h2.products-paulista::before {
+  color: #492901;
+}
+
+h2.products-carioca::before {
+  color: #c17139;
+}
+
+h2.products-mineiro::before {
+  color: #d7a54d;
+}
+
+.products-item p {
+  text-align: center;
+  max-width: 300px;
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
+.products-btn {
+  width: 180px;
+  border: 3px solid #252525;
+  color: #252525;
+  text-decoration: none;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+  margin: 30px auto 0 auto;
+}
+
+/*Locations*/
+.locations {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.locations-item {
+  clear: both;
+  margin: 30px auto;
+}
+
+.locations-item::after,
+.locations-item::before {
+  /*This method is the same as using overflow: hidden, but overflow has its limitations*/
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.locations-item img {
+  width: 460px;
+  float: left;
+  display: block;
+  margin: 0 10px;
+}
+
+.locations-item > div {
+  width: 460px;
+  float: left;
+  margin: 0 10px;
+}
+
+.locations-item h2 {
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+
+.locations-item p {
+  font-size: 1.125em;
+  line-height: 1.4em;
+  max-width: 320px;
+  margin-bottom: 40px;
+}
+
+.locations-item a {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid #252525;
+  color: #252525;
+  padding: 10px 20px;
+}
+
+/*Newsletter*/
+.newsletter {
+  background: #e7e4d8;
+  padding: 30px 0;
+}
+
+.newsletter-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.newsletter-container::after,
+.newsletter-container::before {
+  /*This method is the same as using overflow: hidden, but overflow has its limitations*/
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.newsletter-info {
+  width: 460px;
+  margin: 0 10px;
+  float: left;
+}
+
+.newsletter-info h2 {
+  font-size: 2.25em;
+}
+
+.newsletter-info p {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.newsletter form {
+  width: 460px;
+  margin: 0 10px;
+  float: left;
+}
+
+.newsletter form label {
+  display: none;
+}
+
+.newsletter input {
+  width: 320px;
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: "Bitter";
+  padding: 10px;
+  float: left;
+  margin-right: 0px;
+}
+
+.newsletter button {
+  background: #252525;
+  font-family: "Bitter";
+  text-transform: uppercase;
+  font-size: 1.5em;
+  width: 140px;
+  padding: 13px 0;
+  color: #fff;
+  border: none;
+  margin-left: -2px;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+/*Footer*/
+.footer {
+  background: #d6d3c8;
+  padding: 30px 0;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-container::after,
+.footer-container::before {
+  /*This method is the same as using overflow: hidden, but overflow has its limitations*/
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer p {
+  float: left;
+  margin: 0 10px;
+  font-size: 1.125em;
+  line-height: 1.4em;
+}
+
+.footer img {
+  float: right;
+}
