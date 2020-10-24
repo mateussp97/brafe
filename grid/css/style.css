@@ -45,7 +45,8 @@ img {
   }
 
   .menu-nav a {
-    margin: 20px 4px 0px 0px;
+    font-size: 1em;
+    margin: 20px 10px 0px 0px;
     padding: 0;
   }
 }
@@ -85,8 +86,14 @@ img {
 }
 
 /*About*/
+.about {
+  padding: 60px 0;
+}
+
 .about h2 {
   font-size: 2.25em;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .about-item h3 {
@@ -98,12 +105,20 @@ img {
   font-weight: normal;
   text-align: center;
   position: relative;
+  width: 220px;
+  padding: 5px 0;
+  margin: 0 auto;
+  border-radius: 6px;
+  top: -15px;
 }
 
 .about > p {
   font-size: 1.125em;
   line-height: 1.4em;
   font-style: italic;
+  max-width: 460px;
+  margin: 20px auto;
+  text-align: center;
 }
 
 /*Products*/
@@ -111,10 +126,17 @@ img {
   background: #e7e4d8;
   border-top: 3px solid #d6d3c8;
   border-bottom: 3px solid #d6d3c8;
+  padding: 60px 0;
+}
+
+.products-item {
+  margin-bottom: 40px;
 }
 
 .products-item h2 {
   font-size: 2.25em;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .products-item h2::before {
@@ -126,6 +148,7 @@ img {
   border-radius: 50%;
   border: 5px solid #e7e4d8;
   box-shadow: 0 0 0 5px currentColor;
+  margin: 20px auto;
 }
 
 h2.products-paulista::before {
@@ -141,11 +164,14 @@ h2.products-mineiro::before {
 }
 
 .products-item p {
-  font-size: 0.875em;
-  line-height: 1.4em;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.3em;
 }
 
 .products-btn {
+  width: 180px;
+  display: block;
   border: 3px solid #252525;
   color: #252525;
   text-decoration: none;
@@ -153,29 +179,51 @@ h2.products-mineiro::before {
   font-size: 1.125em;
   font-weight: bold;
   text-transform: uppercase;
+  padding: 15px 0;
+  margin: 30px auto 0 auto;
 }
 
 /*Locations*/
+.locations {
+  padding: 40px 0;
+}
+
+.locations-item {
+  padding: 20px 0;
+}
+
 .locations-item h2 {
   font-size: 2.25em;
+  margin-bottom: 10px;
 }
 
 .locations-item p {
   font-size: 1.125em;
   line-height: 1.4em;
+  max-width: 300px;
+  margin-bottom: 30px;
 }
 
 .locations-item a {
   font-size: 1.125em;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   border: 3px solid;
   color: #252525;
+  padding: 15px;
+}
+
+@media (max-width: 739px) {
+  .locations-item h2 {
+    margin: 10px 0;
+  }
 }
 
 /*Newsletter*/
 .newsletter {
   background: #e7e4d8;
+  padding: 30px 0;
 }
 
 .newsletter-info h2 {
@@ -196,25 +244,53 @@ h2.products-mineiro::before {
   background: none;
   font-size: 1.5em;
   font-style: italic;
-  font-family: Georgia, serif;
+  font-family: "Bitter", serif;
+  width: calc(100%-140px);
+  padding: 10px;
+  float: left;
 }
 
 .newsletter button {
   background: #252525;
   border: none;
-  font-family: Georgia, serif;
+  border-radius: 0;
+  font-family: "Bitter", serif;
   text-transform: uppercase;
   font-size: 1.5em;
   color: #fff;
   cursor: pointer;
+  width: 140px;
+  padding: 13px 0;
+}
+
+@media (max-width: 739px) {
+  .newsletter-info {
+    margin-top: 20px;
+  }
+
+  .newsletter form {
+    margin: 20px 0;
+  }
 }
 
 /*Footer*/
 .footer {
   background: #d6d3c8;
+  padding: 40px 0;
+}
+
+.footer img {
+  float: right;
 }
 
 .footer p {
   font-size: 1.125em;
   line-height: 1.4em;
+}
+
+@media (max-width: 739px) {
+  .footer img {
+    float: none;
+    margin-top: 20px;
+  }
 }
