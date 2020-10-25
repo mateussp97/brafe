@@ -20,6 +20,7 @@ body {
 @media (max-width: 739px) {
   .container {
     flex-direction: column;
+    max-width: 370px;
   }
 }
 
@@ -133,12 +134,6 @@ body {
   text-align: center;
 }
 
-@media (max-width: 739px) {
-  .about-item {
-    margin: 0 auto;
-  }
-}
-
 /*Products*/
 .products {
   background: #e7e4d8;
@@ -183,8 +178,8 @@ h2.products-mineiro::before {
 }
 
 .products-item p {
-  font-size: 0.875em;
-  line-height: 1.4em;
+  font-size: 1em;
+  line-height: 1.3em;
   text-align: center;
 }
 
@@ -203,9 +198,8 @@ h2.products-mineiro::before {
 }
 
 @media (max-width: 739px) {
-  .products-item p {
-    margin: 0 auto;
-    max-width: 350px;
+  .products-item {
+    margin: 20px 0;
   }
 }
 
@@ -253,17 +247,17 @@ h2.products-mineiro::before {
 }
 
 @media (max-width: 739px) {
-  .locations-info {
-    width: 460px;
+  .locations {
+    padding: 0;
   }
 
-  .locations-img,
-  .locations-info {
-    margin: 0 auto;
+  .locations-item {
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 
   .locations-item h2 {
-    margin: 10px 0;
+    margin-top: 15px;
   }
 }
 
@@ -334,14 +328,6 @@ h2.products-mineiro::before {
   .newsletter form {
     margin: 0 auto;
   }
-
-  .newsletter input {
-    max-width: 350px;
-  }
-
-  .newsletter button {
-    max-width: 150px;
-  }
 }
 
 /*Footer*/
@@ -368,7 +354,6 @@ h2.products-mineiro::before {
 
   .footer p {
     margin: 0 auto;
-    max-width: 450px;
     margin-bottom: 20px;
   }
 }
