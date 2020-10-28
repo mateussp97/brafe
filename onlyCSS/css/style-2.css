@@ -75,6 +75,18 @@ li {
   clear: both;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 739px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
 /*Filter*/
 .filter {
   background-color: #e7e4d8;
@@ -110,6 +122,18 @@ li {
   border: 3px solid #252525;
   float: right;
   margin-top: 5px;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .filter {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 739px) {
+  .filter {
+    display: none;
+  }
 }
 
 .flavor {
@@ -183,6 +207,26 @@ li {
 .products li h2 {
   font-size: 00.875em;
   font-weight: bold;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .products {
+    width: 460px;
+  }
+
+  .products li {
+    width: 220px;
+  }
+}
+
+@media (max-width: 739px) {
+  .products {
+    width: 300px;
+  }
+
+  .products li {
+    width: 140px;
+  }
 }
 
 .footer {
