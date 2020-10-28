@@ -27,6 +27,33 @@ img {
   font-size: 1.125em;
 }
 
+.menu-nav ul {
+  float: right;
+  list-style: none;
+  display: flex;
+}
+
+.menu-nav ul li {
+  display: inline-block;
+}
+
+.menu-nav ul li a {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-nav ul {
+    float: none;
+  }
+
+  .menu-nav ul li a {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
 /*Intro*/
 .intro {
   background: url("../img/bg-intro.jpg") no-repeat center center;
