@@ -1,0 +1,170 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  color: #252525;
+}
+
+li {
+  list-style: none;
+}
+
+/*Menu*/
+.header-informations {
+  font: 0.875em;
+  background-color: #d6d3c8;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.header-logo img {
+  display: block;
+  margin: 40px auto;
+}
+
+.header-menu {
+  border-top: 3px solid #d6d3c8;
+  border-bottom: 3px solid #d6d3c8;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+.header-menu li {
+  display: inline-block;
+}
+
+.header-menu li a {
+  display: block;
+  padding: 5px 10px 5px 0;
+  text-decoration: none;
+  color: #252525;
+  font-size: 1.125em;
+  transition: 0.3s;
+}
+
+.header-menu li a:hover {
+  color: #c0beb4;
+}
+
+.header-menu li a::before {
+  content: "•";
+  padding-right: 10px;
+}
+
+.header-menu li:first-child a::before {
+  content: "";
+}
+
+/*Filter*/
+.filter {
+  background-color: #e7e4d8;
+  border: 3px solid #d6d3c8;
+  padding: 20px;
+}
+
+.filter h2 {
+  font-size: 1.125em;
+  padding: 10px 0;
+}
+
+.filter ul {
+  border-top: 3px solid #c0beb4;
+  border-bottom: 3px solid #c0beb4;
+  padding: 10px 0;
+}
+
+.filter li {
+  font-style: italic;
+  font-size: 1.125em;
+  line-height: 2em;
+}
+
+.filter li::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #252525;
+  float: right;
+  margin-top: 5px;
+}
+
+@media (max-width: 739px) {
+  .filter {
+    display: none;
+  }
+}
+
+.flavor {
+  overflow: hidden;
+}
+
+.flavor span {
+  text-indent: -200px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: currentColor;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.flavor-3 {
+  color: #492901;
+  box-shadow: 20px 0 0 0, 40px 0 0 0;
+}
+
+.flavor-4 {
+  color: #c17139;
+  box-shadow: 20px 0 0 0, 40px 0 0 0, 60px 0 0 0;
+}
+
+.flavor-5 {
+  color: #d7a54d;
+  box-shadow: 20px 0 0 0, 40px 0 0 0, 60px 0 0 0, 80px 0 0 0;
+}
+
+/*Products*/
+.products h1 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+.products li img {
+  display: block;
+  max-width: 100%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #252525;
+  margin: 40px 3px 0 3px; /*3px to align shadow*/
+}
+
+.products li span {
+  background-color: #e7e4d8;
+  padding: 10px;
+  font-size: 0.875em;
+  font-weight: bold;
+  position: relative;
+  border-radius: 6px;
+  top: -15px;
+}
+
+.products li h2 {
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+.footer {
+  background: #e7e4d8;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1.125em;
+  line-height: 1.4em;
+  margin-top: 80px;
+}
