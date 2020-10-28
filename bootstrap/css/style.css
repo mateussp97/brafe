@@ -19,6 +19,7 @@ img {
 /*Menu*/
 .menu {
   background: #252525;
+  padding: 20px 0 0 0;
 }
 
 .menu-nav a {
@@ -30,7 +31,6 @@ img {
 .menu-nav ul {
   float: right;
   list-style: none;
-  display: flex;
 }
 
 .menu-nav ul li {
@@ -91,7 +91,8 @@ img {
 
 /*About*/
 .about {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .about h2 {
@@ -129,10 +130,18 @@ img {
   background: #e7e4d8;
   border-top: 3px solid #d6d3c8;
   border-bottom: 3px solid #d6d3c8;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.products-item {
+  margin-bottom: 40px;
 }
 
 .products-item h2 {
   font-size: 2.25em;
+  text-align: center;
+  font-weight: bold;
 }
 
 .products-item h2::before {
@@ -144,6 +153,7 @@ img {
   border-radius: 50%;
   border: 5px solid #e7e4d8;
   box-shadow: 0 0 0 5px currentColor;
+  margin: 20px auto;
 }
 
 h2.products-paulista::before {
@@ -161,6 +171,7 @@ h2.products-mineiro::before {
 .products-item p {
   font-size: 0.875em;
   line-height: 1.4em;
+  text-align: center;
 }
 
 .products-btn {
@@ -171,16 +182,40 @@ h2.products-mineiro::before {
   font-size: 1.125em;
   font-weight: bold;
   text-transform: uppercase;
+  width: 180px;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 15px 0;
+  transition: 0.3s;
+}
+
+.products-btn:hover {
+  color: #c17139;
+  border-color: #c17139;
+  text-decoration: none;
 }
 
 /*Locations*/
+.locations {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.locations-item {
+  margin-bottom: 40px;
+}
+
 .locations-item h2 {
   font-size: 2.25em;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .locations-item p {
   font-size: 1.125em;
   line-height: 1.4em;
+  max-width: 320px;
+  margin-bottom: 20px;
 }
 
 .locations-item a {
@@ -188,16 +223,28 @@ h2.products-mineiro::before {
   text-transform: uppercase;
   text-decoration: none;
   border: 3px solid;
+  font-weight: bold;
   color: #252525;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.locations-item a:hover {
+  color: #c17139;
+  border-color: #c17139;
+  text-decoration: none;
 }
 
 /*Newsletter*/
 .newsletter {
   background: #e7e4d8;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .newsletter-info h2 {
   font-size: 2.25em;
+  font-weight: bold;
 }
 
 .newsletter-info p {
@@ -209,12 +256,21 @@ h2.products-mineiro::before {
   display: none;
 }
 
+.newsletter form {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
 .newsletter input {
   border: 3px solid #252525;
   background: none;
   font-size: 1.5em;
   font-style: italic;
   font-family: Georgia, serif;
+  align-self: flex-start;
+  padding: 10px;
 }
 
 .newsletter button {
@@ -225,14 +281,35 @@ h2.products-mineiro::before {
   font-size: 1.5em;
   color: #fff;
   cursor: pointer;
+  align-self: flex-start;
+  padding: 13px;
+  margin-left: -3px;
+  transition: 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #c17139;
 }
 
 /*Footer*/
 .footer {
   background: #d6d3c8;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer img {
+  float: right;
 }
 
 .footer p {
   font-size: 1.125em;
   line-height: 1.4em;
+}
+
+@media (max-width: 768px) {
+  .footer img {
+    float: none;
+    margin-top: 20px;
+  }
 }
