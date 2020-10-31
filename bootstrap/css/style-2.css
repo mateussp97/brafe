@@ -67,11 +67,19 @@ li {
   background-color: #e7e4d8;
   border: 3px solid #d6d3c8;
   padding: 20px;
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .filter {
+    display: none;
+  }
 }
 
 .filter h2 {
   font-size: 1.125em;
   padding: 10px 0;
+  font-weight: bold;
 }
 
 .filter ul {
