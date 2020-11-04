@@ -1,0 +1,22 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  color: #252525;
+  background: #e7e4d8;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
