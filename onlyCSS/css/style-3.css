@@ -59,3 +59,55 @@ a {
 .header-menu li:first-child a {
   padding-left: 0;
 }
+
+/*Main*/
+
+/*Side Nav*/
+.side-nav {
+  width: 300px;
+  background: #252525;
+  float: left;
+}
+
+.side-nav li a {
+  display: block;
+  color: #fff;
+  border-bottom: 2px solid #484846;
+  font-size: 1.125em;
+  padding: 20px;
+}
+
+.side-nav li a::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  top: 5px;
+  margin-right: 15px;
+  position: relative;
+  background-image: url(../img-3/icones.png);
+}
+
+.nav-contabilidade::before {
+  background-position: 0 0px;
+}
+
+.nav-produtos::before {
+  background-position: 0 -24px;
+}
+
+.nav-paginas::before {
+  background-position: 0 -48px;
+}
+
+.nav-plugins::before {
+  background-position: 0 -72px;
+}
+
+.nav-formularios::before {
+  background-position: 0 -96px;
+}
+
+.nav-hospedagens::before {
+  background-position: 0 -120px;
+}
